@@ -23,7 +23,7 @@ jobs:
         $version = $env:GITHUB_REF.TrimStart("refs/tags/v")
         ./build.ps1 -Version $version
     - name: Upload artifacts 🆙
-      uses: actions/github-script@7dff1a87643417cf3b95bb10b29f4c4bc60d8ebd
+      uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
